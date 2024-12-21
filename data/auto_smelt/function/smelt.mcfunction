@@ -2,12 +2,12 @@ function dfl:lib/things_count {name:"raw_iron"}
 function dfl:lib/things_count {name:"coal_block"}
 execute \
     if score @s dfl_raw_iron_num matches 9.. \
-    if score @s dfl_coal_block_num matches 9.. \
+    if score @s dfl_coal_block_num matches 1.. \
     if score @s xp matches 9.. run \
     tag @s add raw_iron_coal_block
 give @s[tag=raw_iron_coal_block] iron_ingot 9
 clear @s[tag=raw_iron_coal_block] raw_iron 9
-clear @s[tag=raw_iron_coal_block] coal_block 9
+clear @s[tag=raw_iron_coal_block] coal_block 1
 xp add @s[tag=raw_iron_coal_block] -9
 tag @s remove raw_iron_coal_block
 
