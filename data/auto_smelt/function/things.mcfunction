@@ -9,5 +9,5 @@ execute unless score @r dfl_enable matches 1 run \
     return fail
 title @a reset
 
-execute as @a run function auto_smelt:smelt
+execute as @a run function auto_smelt:smelt {input:"raw_iron",output:"iron_ingot"}
 function dfl:tick/relax
