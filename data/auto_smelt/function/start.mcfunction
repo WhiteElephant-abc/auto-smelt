@@ -6,5 +6,6 @@ tellraw @a [{"text": "| "},{"text": "本数据包使用 ","bold": true},{"text":
 tellraw @a "--------------------"
 
 scoreboard objectives add xp xp
+scoreboard objectives add ore trigger
 scoreboard objectives add dfl_enable dummy
 scoreboard players set @e dfl_enable 0
