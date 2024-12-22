@@ -16,3 +16,5 @@
 如果遇到任何问题，请点击 [这里](https://github.com/WhiteElephant-abc/auto-smelt/issues/new) 反馈
 
 如果无法访问，请点击 [这里](https://steampp.net/) 下载加速器
+
+**此数据包依赖于[DFL](https://github.com/WhiteElephant-abc/datapackets-functions-LIB)**
