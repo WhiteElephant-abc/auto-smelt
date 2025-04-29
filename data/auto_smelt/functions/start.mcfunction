@@ -1,19 +1,19 @@
 tellraw @a "--------------------"
-tellraw @a [{"text": "| Auto Smelt "},{"type":"translatable","translate":"license.white.elephant.enable","fallback":"数据包加载成功","color":"green","bold":true}]
+tellraw @a [{"text": "| i-want-to-do "},{"type":"translatable","translate":"license.white.elephant.enable","fallback":"数据包加载成功","color":"green","bold":true}]
 tellraw @a [{"text": "| "},{"text":"by white_elephant_","color":"blue","underlined":true,"italic":true,"clickEvent":{"action":"open_url","value":"https://modrinth.com/user/white_elephant"}}]
 tellraw @a "| "
 tellraw @a [{"text": "| "},{"type":"translatable","translate":"license.white.elephant.use","fallback":"本数据包使用","bold": true},{"text": " "},{"text":"GNU GPL","color":"blue","underlined":true,"italic":true,"clickEvent":{"action":"open_url","value":"https://www.gnu.org/licenses/gpl-3.0.txt"}},{"text": " "},{"type":"translatable","translate":"license.white.elephant.open.source","fallback":"协议开源","bold": true}]
 tellraw @a {"type":"translatable","translate":"no.resource.pack.white.elephant.a","fallback":"| "}
 tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"WARNING: No localization","color":"red","bold":true}]
 tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"resource package detected.","color":"red","bold":true}]
-tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"You can click the link below,"}]
-tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"or go to the official website of"}]
-tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"this data package to download the"}]
-tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"resource package."}]
+tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"You can download it"}]
+tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"by clicking the link below"}]
 tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"| "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"Modrinth","color":"blue","underlined":true,"italic":true,"clickEvent":{"action":"open_url","value":"https://modrinth.com/project/localization-resource-pack"}},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":" | "},{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"GitHub","color":"blue","underlined":true,"italic":true,"clickEvent":{"action":"open_url","value":"https://github.com/WhiteElephant-abc/Localization-Resource-Pack"}}]
 tellraw @a [{"type":"translatable","translate":"no.resource.pack.white.elephant.nothing","fallback":"--------------------"}]
 
-scoreboard objectives add xp xp
-scoreboard objectives add ore trigger
+#检测datapackets-functions-LIB数据包是否加载
 scoreboard objectives add dfl_enable dummy
 scoreboard players set @e dfl_enable 0
+tag @a remove dfl_need
+scoreboard objectives add xp xp
+scoreboard objectives add ore trigger
